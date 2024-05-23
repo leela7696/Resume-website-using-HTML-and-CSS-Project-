@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: o;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: black;
+    color: white;
+}
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/RESUME/images/leelak-2.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.continer {
+    padding: 10px 10%;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.logo{
+    width: 400px;
+
+
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 25px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+
+}
+.header-text h1 {
+    font-size: 60px;
+    margin-top: ;
+
+}
+
+.header-text h1 span{
+    color: #ff004f;
+}
+
+.lee {
+    border-radius: 20px;
+    position: absolute;
+}
+/*-------------about----------------*/
+
+#about{
+    padding: 80px 0;
+    color: aliceblue;
+}
+.row {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 10%;
+
+}
+.about-col-2 {
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-conents ul li{
+    list-style: none;
+    margin: 10px 0;
+
+}
+.tab-conents ul li span{
+    color: #ff004f;
+    font-size: 14px;
+}
+.lee{
+    position: relative;
+}
+/*---------------services---------------*/
+#services{
+    padding: 30px 0;
+
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background: #938b8b;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 50px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div:hover{
+    background: #ff004f;
+    transform: translate(-10px);
+}
+
+/*---------------space--------------*/
+#MY-Links{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+
+.hub{
+    color: #ff004f;
+    position: absolute;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 70px;
+}
+
+.wh{
+    color: #fff;
+}
+.link-title{
+    font-size: 18px;
+    font-weight: 500;
+    position:absolute;
+    color: #ff004f;
+    padding: 100px;
+    position: relative;
+   
+}
+.org{
+    color: #fff;
+}
+
+.the{
+    color: #ff004f;
+    font-style: initial;
+}
+/*--------------------space---------*/
+.cv{
+    background-color: #ff004f;
+    font-size: large;
+    font-weight: 900;
+    padding: 10px;
+    border-radius: 20px;
+    position: absolute;
+margin-top: 50px;
+margin-left: 300px;
+margin-bottom: 50px;
+color: #fff;
+ 
+    
+}
+
+
+.copy {
+    position: relative;
+    margin-top: 200px;
+    margin-left: 30px;
+    text-align: center;
+    font-weight: 400;
+    background-color: #454444;
+
+
+}
+/*-------------css for small screen---------*/
+
+.white{
+    color: #fff;
+    position: absolute;
+}
+.linkt{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    background: #ff004f;
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: background 0.5s, transform 0.5s;
+    color: #fff;
+    transform: translate(-10px);
+}
+html{
+    scroll-behavior: smooth;
+}
